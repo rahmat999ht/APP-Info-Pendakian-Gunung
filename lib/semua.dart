@@ -54,9 +54,9 @@ class _SemuaState extends State<Semua> {
         elevation: 0.0,
         title: controller.isLogin.isTrue && controller.isSearch.isTrue
             ? searchTextField
-            : const Text(
-                "widget.modelGunung.namalokasi",
-                style: TextStyle(
+            : Text(
+                widget.modelGunung.modelProv.namaProvinsi,
+                style: const TextStyle(
                     fontSize: 20,
                     fontWeight: FontWeight.bold,
                     color: Colors.black),
